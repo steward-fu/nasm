@@ -2,7 +2,7 @@
   
 ## Introduction
 How to link GCC library with NASM assembler without GCC compiler ?   
-Basically, it only needs both libc.a and libgcc.a wth ld(binutils) linker.  
+Basically, it only needs libc.a for linking.  
 In the below example code, it shows how to convert string to long(atol) and then print result(printf).  
 
 ## Assembly
@@ -53,6 +53,6 @@ main:
   
 ## How to build example
 -  nasm -f elf32 main.s -o main.o
--  ld -m elf_i386 main.o -o main -static libc.a libgcc.a
+-  ld -m elf_i386 main.o -o main libc.a
   
 ### https://steward-fu.github.io/website/index.htm
