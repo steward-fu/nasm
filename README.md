@@ -1,7 +1,7 @@
-# NASM Assembler
+# NASM Assembly
   
 ## Introduction
-How to link GCC library with NASM assembly without GCC compiler ?   
+How to link GCC library with NASM assembler without GCC compiler ?   
 Basically, it only needs both libc.a and libgcc.a wth ld(binutils) linker.  
 In the below example code, it shows how to convert string to long(atol) and then print result(printf).  
 
